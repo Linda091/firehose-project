@@ -25,7 +25,7 @@
 }
 
 .slogan {
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: italic;
   padding-top: 26px;
 }
@@ -38,6 +38,8 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'lunchtype22regular', sans-serif;
+  font-weight: bold;
 }
 
 header {
@@ -47,3 +49,16 @@ header {
 hr {
   clear: both;
 }
+
+h1{
+  font-family: 'lunchtype22regular', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'lunchtype22light', sans-serif;
+  font-size: 30px;
+}
+
+
