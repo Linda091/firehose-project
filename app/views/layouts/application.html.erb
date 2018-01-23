@@ -14,7 +14,9 @@
         <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
-          SPLURTY
+          THINK
+          <br />
+          POSITIVE
         </div>
         <% end %>
       </div>
@@ -42,6 +44,7 @@
             <%= simple_form_for Quote.new do |f| %>
               <div class="modal-body">
                 <%= f.input :saying, label: "What is the saying you want to add?", placeholder:"Act as if what you do makes a difference. It does."%>
+                <br />
                 <%= f.input :author, label: "Who is the author of the quote?", placeholder: "William James"%>
               </div>
               <div class="modal-footer">
@@ -69,7 +72,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6">
-           <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+           <%= link_to "Need More Motivation?", root_path, class: 'next-quote' %>
           </div>
           <div class="col-12 col-sm-6 footer-blurb">
             Proudly hacked in Brooklyn, NY by Linda
