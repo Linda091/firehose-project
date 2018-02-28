@@ -5,6 +5,11 @@ body {
   margin: 0px;
   padding-left: 5%;
   padding-right: 5%;
+  background: image_url('background.jpg')no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .clear {
@@ -16,7 +21,9 @@ body {
   max-width: 120px;
   width: 120px;
   height: 150px;
-  padding-top: 5%;
+  padding-top: 10%;
+  position: relative;
+
 }
 
 .slogan {
@@ -56,20 +63,14 @@ h2 {
   font-size: 30px;
 }
 
-.next-quote {
-  color: #f84342;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-}
-
 .footer-blurb{
  font-family: 'Source Sans Pro', sans-serif;
- font-style: italic; 
  text-align: right;
 }
 
 .logo:hover {
   text-decoration: none;
+  position: relative;
 }
 
 .col-10 {
@@ -91,13 +92,8 @@ h2 {
 }
 
 h2 span {
-  color: #dddddd;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 5%;
-}
-
-::selection {
-  background-color: #f84342;
 }
 
 .headline {
@@ -106,5 +102,8 @@ h2 span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
   padding-top: 5%;
+  padding-left: 8%;
 
 }
+
+

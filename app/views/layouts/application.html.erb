@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Black Girl Magic</title>
+    <title>Black Women Speak</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -35,20 +35,20 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Share Your Favorite Quote</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Share Your Black Women Speaks Quote</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <%= simple_form_for Quote.new do |f| %>
               <div class="modal-body">
-                <%= f.input :saying, label: "What is the saying you want to add?", placeholder:"Act as if what you do makes a difference. It does."%>
+                <%= f.input :saying, label: "What is the quote you want to add?", placeholder:"When they go low, we go high."%>
                 <br />
-                <%= f.input :author, label: "Who is the author of the quote?", placeholder: "William James"%>
+                <%= f.input :author, label: "Who said the quote?", placeholder: "Michelle Obama"%>
               </div>
               <div class="modal-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <%= f.submit 'Create', class: 'btn btn-danger' %>
+               <%= f.submit 'Create', class: 'btn btn-warning' %>
               </div>
             <% end %>
         </div>
@@ -67,14 +67,12 @@
         <%= yield %>
     </div>
 
+  <br/><br/>
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6">
-           <%= link_to "Need More Motivation?", root_path, class: 'next-quote' %>
-          </div>
           <div class="col-12 col-sm-6 footer-blurb">
-            Proudly hacked in Brooklyn, NY by Linda
+            Proudly hacked in Brooklyn, NY
           </div>
         </div>
       </div>
