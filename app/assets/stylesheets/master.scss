@@ -20,7 +20,6 @@ body {
 
 .icon {
   padding-top: 10%;
-  position: relative;
 }
 
 .logo:hover {
@@ -38,6 +37,13 @@ body {
   .footer-blurb {
     text-align: left;
   }
+}
+
+.col-10 {
+  text-align: center;
+  float: right;
+  font-weight: 500px;
+  font-size: 40px;
 }
 
 .headline {
