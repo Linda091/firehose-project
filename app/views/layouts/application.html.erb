@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Splurty</title>
+    <title>Black Girl Magic</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   </head>
-
+  
   <body>
     <header class="row">
       <div class="col-3">
         <%= link_to root_path, class: 'logo' do %>
-        <div class="circle">
-          <br />
-          THINK
-          <br />
-          POSITIVE
-        </div>
+          <%=image_tag 'icon.png', class: 'icon' %>
         <% end %>
       </div>
-      <div class="col col-sm-4 hidden-xs-down slogan">
-        Splurting out your daily dose of positive reminders since 2018
+      <div class="headline">
+        BLACK WOMEN SPEAK
+        <br/>
+        <h4>Encouraging and Powerful Words from Black Women</h4>
       </div>
+      <br/>
       <div class="col-10 offset-1 offset-sm-0 col-5 links">
         <!-- Button trigger modal -->
-        <%= link_to 'Add a Quote', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        <%= link_to 'ADD A QUOTE', '#', data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;&nbsp;
-        <%= link_to 'About', about_path %>
+        <%= link_to 'ABOUT', about_path %>
       </div>
     </header>
 

@@ -1,31 +1,26 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 .clear {
   clear:both;
 }
 
-.circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+.icon {
+  max-height: 200px;
+  max-width: 120px;
+  width: 120px;
+  height: 150px;
+  padding-top: 5%;
 }
 
 .slogan {
-  font-family: 'lunchtype22light', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
   padding-top: 26px;
 }
@@ -38,7 +33,7 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
-  font-family: 'lunchtype22regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
 }
 
@@ -51,24 +46,24 @@ hr {
 }
 
 h1{
-  font-family: 'lunchtype22regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 48px;
 }
 
 h2 {
-  font-family: 'lunchtype22light', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
 }
 
 .next-quote {
   color: #f84342;
-  font-family: 'lunchtype22light', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
 }
 
 .footer-blurb{
- font-family: 'lunchtype22light', sans-serif;
+ font-family: 'Source Sans Pro', sans-serif;
  font-style: italic; 
  text-align: right;
 }
@@ -77,8 +72,12 @@ h2 {
   text-decoration: none;
 }
 
+.col-10 {
+  text-align: center;
+}
+
 .about {
-  font-family: 'lunchtype22regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (max-width: 750px) {
@@ -88,14 +87,24 @@ h2 {
 }
 
 .modal {
- font-family: 'lunchtype22regular', sans-serif;
+ font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 span {
   color: #dddddd;
-  font-family: 'lunchtype22regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 5%;
 }
 
 ::selection {
   background-color: #f84342;
+}
+
+.headline {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  padding-top: 5%;
+
 }
