@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+/*Main Page */
+
 body {
   margin: 0px;
   padding-left: 5%;
@@ -17,20 +19,42 @@ body {
 }
 
 .icon {
-  max-height: 200px;
-  max-width: 120px;
-  width: 120px;
-  height: 150px;
   padding-top: 10%;
   position: relative;
-
 }
 
-.slogan {
+.logo:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-blurb{
+ font-family: 'Source Sans Pro', sans-serif;
+ text-align: right;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.headline {
+  text-align: center;
+  font-weight: 500;
   font-family: 'Source Sans Pro', sans-serif;
-  font-style: italic;
-  padding-top: 26px;
+  font-size: 50px;
+  padding-top: 5%;
+  padding-left: 8%;
+
 }
+
+h2 span {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 5%;
+}
+
 
 .links {
   padding-top:26px;
@@ -44,12 +68,10 @@ body {
   font-weight: bold;
 }
 
-header {
-  border-top: 9px solid #222222;
-}
+/*About Page*/
 
-hr {
-  clear: both;
+.about {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1{
@@ -63,47 +85,14 @@ h2 {
   font-size: 30px;
 }
 
-.footer-blurb{
- font-family: 'Source Sans Pro', sans-serif;
- text-align: right;
-}
+/*Quote Modal*/
 
-.logo:hover {
-  text-decoration: none;
-  position: relative;
-}
 
-.col-10 {
-  text-align: center;
-}
-
-.about {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-@media (max-width: 750px) {
-  .footer-blurb {
-    text-align: left;
-  }
+hr {
+  clear: both;
 }
 
 .modal {
  font-family: 'Source Sans Pro', sans-serif;
 }
-
-h2 span {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding-top: 5%;
-}
-
-.headline {
-  text-align: center;
-  font-weight: 500;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 50px;
-  padding-top: 5%;
-  padding-left: 8%;
-
-}
-
 
