@@ -16,18 +16,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+  color: black;
 
-.col-10 {
-  line-height: 70px;
-  display: inline-block;
-  margin: 0 8px;
-  position: absolute;
-  top: 0;
-  left: 100px;
-  bottom: 0;
-  right: 0;
-  text-align: center;
 }
 
 .logo:hover {
@@ -43,53 +33,78 @@ body {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 20px 20px;
-  line-height: 20px;
+  padding: 30px 20px;
+  line-height: 25px;
+  background: rgba(249,249,249, 0.3);
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .footer-blurb{
  font-family: 'Source Sans Pro', sans-serif;
  text-align: right;
+ float: right;
 }
 
-@media (max-width: 750px) {
-  .footer-blurb {
-    text-align: left;
-  }
+h1 {
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
 }
 
 h2 span {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
 }
 
 .links {
   padding-top:26px;
-  word-spacing: 30px;
+  line-height: 70px;
+  display: inline-block;
+  margin: 0 8px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
 }
+
 .links a {
   color: black;
-  border-bottom: 1px solid #dfdfdf;
   font-weight: bold;
   font-family: 'Londrina Outline', cursive;
   transition: 0.2s all;
   font-size: 42px;
   text-decoration-line: none;
+  padding-left: 25px;
 }
 /*About Page*/
 
 .about {
   font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 5%;
+  background: rgba(249,249,249, 0.3);
+  border-radius: 25px;
 }
 
-h1{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 48px;
+.about_bws{
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Londrina Outline', cursive;
 }
 
-h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+h3 {
   font-size: 30px;
+  text-align: center;
 }
 
 /*Quote Modal*/
@@ -102,4 +117,3 @@ hr {
 .modal {
  font-family: 'Source Sans Pro', sans-serif;
 }
-
