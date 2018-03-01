@@ -17,7 +17,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: black;
-
 }
 
 .logo:hover {
@@ -44,13 +43,14 @@ body {
 .footer {
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 15px;
 }
 
 .footer-blurb{
  font-family: 'Source Sans Pro', sans-serif;
  text-align: right;
  float: right;
+ position: relative;
 }
 
 h1 {
@@ -105,6 +105,7 @@ h2 span {
 h3 {
   font-size: 30px;
   text-align: center;
+  line-height: 1.6;
 }
 
 /*Quote Modal*/

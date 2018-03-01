@@ -21,10 +21,11 @@
       <br/>
       <div class="col-10 offset-1 offset-sm-0 col-5 links">
         <%= link_to 'HOME', root_path %>
+           &nbsp;&nbsp;
+        <%= link_to 'ABOUT', about_path %>
+           &nbsp;&nbsp;
         <!-- Button trigger modal -->
         <%= link_to 'ADD A QUOTE', '#', data: {toggle: 'modal', target: '#myModal'} %>
-        &nbsp;&nbsp;
-        <%= link_to 'ABOUT', about_path %>
       </div>
     </header>
 
@@ -33,16 +34,16 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Share A <b>Black Women Speaks</b> Quote</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Share A <b>Black Women Speak</b> Quote</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <%= simple_form_for Quote.new do |f| %>
               <div class="modal-body">
-                <%= f.input :saying, label: "Enter the quote here", placeholder:"When they go low, we go high."%>
+                <%= f.input :saying, label: "Enter The Quote Here", placeholder:"When they go low, we go high."%>
                 <br />
-                <%= f.input :author, label: "Who said the quote?", placeholder: "Michelle Obama"%>
+                <%= f.input :author, label: "Who Said The Quote?", placeholder: "Michelle Obama"%>
               </div>
               <div class="modal-footer">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -66,12 +67,12 @@
         <%= yield %>
     </div>
 
-  <br/><br/><br/>
+  <br/>
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6 footer-blurb">
-            <p>Proudly hacked in Brooklyn, NY by <a target "_blank" href= "lindaogbevoen.getforge.io">Linda</a></p>
+          <div class="col-12 offset-1 offset-sm-0 col-8  footer-blurb">
+            <p>Designed in Brooklyn, NY by <a target "_blank" href= "lindaogbevoen.getforge.io">Linda</a></p>
             <p>
               <a target= "_blank" href= "https://unsplash.com/@auttgood">Photo by Autumn Goodman on Unsplash</a>
             </p> 
