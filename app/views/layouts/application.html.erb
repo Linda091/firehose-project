@@ -1,44 +1,44 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <title>Black Women Speak</title>
+    <title>Echo</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Inconsolata|Karla|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   
   <body>
-    <header class="row">
-      <div class="col-3">
-        <%= link_to root_path, class: 'icon' do %>
-          <%=image_tag 'icon1.png', class: 'logo' %>
-        <% end %>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item nav-link">
+            <%= link_to 'Home', root_path %>
+          </li>
+          <li class="nav-item nav-link">
+            <%= link_to 'About', about_path %>
+          </li>
+          <li class="nav-item nav-link">
+            <%= link_to 'Add a Quote', '#', data: {toggle: 'modal', target: '#myModal'} %>
+          </li>
+        </ul>
       </div>
-      <br/>
-      <div class="col-10 offset-1 offset-sm-0 col-5 links">
-        <%= link_to 'HOME', root_path %>
-           &nbsp;&nbsp;
-        <%= link_to 'ABOUT', about_path %>
-           &nbsp;&nbsp;
-        <!-- Button trigger modal -->
-        <%= link_to 'ADD A QUOTE', '#', data: {toggle: 'modal', target: '#myModal'} %>
-      </div>
-    </header>
-
+    </nav>
+    
     <!-- Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Share A <b>Black Women Speak</b> Quote</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Share a Quote</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+
             <%= simple_form_for Quote.new do |f| %>
               <div class="modal-body">
                 <%= f.input :saying, label: "Enter The Quote Here", placeholder:"When they go low, we go high."%>
@@ -50,11 +50,11 @@
                <%= f.submit 'Create', class: 'btn btn-warning' %>
               </div>
             <% end %>
+          </div>
         </div>
       </div>
-    </div>
 
-    <br/><br/>
+    <br/>
     <hr />
     <br class="clear"/>
 
@@ -67,15 +67,13 @@
         <%= yield %>
     </div>
 
-  <br/>
+    <br/><br/>
+    
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 offset-1 offset-sm-0 col-8  footer-blurb">
-            <p>Designed in Brooklyn, NY by <a target "_blank" href= "lindaogbevoen.getforge.io">Linda</a></p>
-            <p>
-              <a target= "_blank" href= "https://unsplash.com/@auttgood">Photo by Autumn Goodman on Unsplash</a>
-            </p> 
+            <p>Designed in Brooklyn, NY by <%=link_to 'Linda Ogbevoen', 'https://github.com/Linda091' %></p>
           </div>
         </div>
       </div>
